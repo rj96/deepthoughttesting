@@ -1,0 +1,36 @@
+While testing 'https://dev.deepthought.education/' website Login functionality using TestCafe, the following steps has been followed.
+
+1. Test Setup:
+    a. Installing Node.js
+    b. Setting up VS code and installing TestCafe 
+    
+2. Navigation:
+Use TestCafe to navigate to the login page of the web application using url: 'https://dev.deepthought.education/login'
+
+3. Login Test Cases:
+    a. Valid Login:
+        - Enter valid credentials (username and password).
+        - Click the "Login" button.
+        - On successful Login check the current url with dashboard url.
+
+    b. Invalid Login (Incorrect Credentials):
+        - Enter invalid credentials 
+            - Invalid username only
+            - Invalid password only
+            - Both username and password invalid
+        - Click the "Login" button.
+        - Check that the login fails and an appropriate error message is displayed.
+    
+    c. Empty Fields:
+        - Submit the login form with empty username and password fields.
+        - Check that the application handles empty fields gracefully, displaying an appropriate error message.
+
+4. Repeat for Different Browsers and Environments:
+    a. Chrome Browser
+    b. Microsoft Edge
+    c. Opera Browser
+
+5. Challenges Faced During Testing:
+    - Initially faced challenge during the installation of TestCafe
+    - Script was not running as it was blocked by the Windows, so enabled the Execution Policy
+    
